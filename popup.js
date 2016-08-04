@@ -19,6 +19,10 @@ function get_data() {
                         var countItems = Object.keys(resp.list).length;
                         document.getElementById("status").innerText = countItems;
                     }
+                    else if (xmlhttp.status == 500 || xmlhttp.status == 401 || xmlhttp.status == 400 || xmlhttp.status == 403)
+                    {
+                        document.getElementById("status").innerText = "Not valid, check your consumer_key and access_token in options";
+                    }
                 };
                 xmlhttp.open("POST", url, true);
                 xmlhttp.send();
