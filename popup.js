@@ -8,7 +8,6 @@ function get_data() {
             } else {
                 var xmlhttp = new XMLHttpRequest();
                 var urlBase = "https://getpocket.com/v3/get?";
-                var access_token = "ab976a12-a739-e150-29cc-ea6928";
                 var detail_type = "simple";
                 var url = urlBase +
                     "consumer_key=" + items.consumer_key + "&" +
