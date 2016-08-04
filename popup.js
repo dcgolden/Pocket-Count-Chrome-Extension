@@ -12,7 +12,7 @@ function get_data() {
                 var url = urlBase +
                     "consumer_key=" + items.consumer_key + "&" +
                     "access_token=" + items.access_token + "&" +
-                    "detail_type" + detail_type;
+                    "detail_type=" + detail_type;
                 xmlhttp.onreadystatechange = function() {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                         var resp = JSON.parse(xmlhttp.responseText);
