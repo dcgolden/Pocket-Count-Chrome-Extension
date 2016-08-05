@@ -8,4 +8,4 @@ Make sure to allow web and extension acess
 
 Then follow the directions here: https://getpocket.com/developer/docs/authentication to generate an access token
 
-Copy your consumer key and access token into the popup.js field where indicated
+Copy your consumer key and access token into the options of the extension. (If you have not stored any values in the extension it will automatically redirect you to options when you click the extension icon in the toolbar, if not right click -> options)
